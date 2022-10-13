@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Tahoma;
+  font-size: 16px;
+}
+
+body {
+  background-color: #333;
+  color: #fafafa;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+}
+
+header {
+  margin: 2rem auto 0 auto;
+  text-align: center;
+}
+
+main {
+  padding: 2rem 0 3rem 0;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+form {
+  min-width: 12.5rem;
+  max-width: 31.25rem;
+  padding: 1rem 2rem;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+select {
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid #000;
+  border-radius: 0.2rem;
+  font-size: 0.625rem;
+  color: goldenrod;
+  width: 100%;
+  height: 1.8rem;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+  background-color: #222;
+}
+
+label {
+  display: block;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-bottom: 0.5rem;
+  accent-color: goldenrod;
+}
+
+select {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 0.2rem;
+  margin-top: 0;
+}
+
+select option:selected {
+  color: goldenrod;
+}
+
+select option:disabled {
+  color: lightgrey !important;
+}
+
+fieldset {
+  margin: 1.2rem 0 0 0;
+  padding: 0;
+  border: none;
+}
+
+legend {
+  padding-bottom: 0.5rem;
+}
+
+textarea {
+  height: 10rem;
+  padding: 1rem;
+}
+
+input[type="submit"] {
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid #000;
+  border-radius: 0.3rem;
+  padding: 0.5rem 0.5rem;
+  font-size: 1rem;
+  color: rgb(118, 118, 118);
+  margin: 1rem auto;
+  display: block;
+  width: 40%;
+  transition: all 250ms ease-in-out;
+}
+
+input[type="submit"]:hover {
+  border: 1px solid #fafafa;
+  background-color: #222;
+  color: #fafafa;
+  cursor: pointer;
+}

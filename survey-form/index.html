@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="vieport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Survey Form</h1>
+      <p id="description">
+        Thank you for taking the time to help us understand your needs
+      </p>
+    </header>
+    <main>
+      <form id="survey-form" action="#">
+        <p>
+          <label for="name" id="name-label">
+            Name:
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="Enter your name"
+            />
+          </label>
+        </p>
+        <p>
+          <label for="email" id="email-label">
+            Email:
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="Enter your Email"
+            />
+          </label>
+        </p>
+        <p>
+          <label for="number" id="number-label">
+            Age:
+            <input
+              type="number"
+              id="number"
+              name="number"
+              min="18"
+              max="100"
+              placeholder="Age"
+            />
+          </label>
+        </p>
+
+        <fieldset>
+          <legend>Which option best describes your current role?</legend>
+          <select id="dropdown">
+            <option value="" disabled selected>(Select)</option>
+            <option value="student">Student</option>
+            <option value="fulltimejob">Full Time Job</option>
+            <option value="learner">Full Time Learner</option>
+            <option value="preferno">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>Which role is the most interesting to you?</legend>
+          <label for="frontend" id="frontend-label">
+            <input
+              type="radio"
+              id="frontend"
+              name="interested-role"
+              value="frontend"
+            />
+            Frontend Developer
+          </label>
+          <label for="backend" id="backend-label">
+            <input
+              type="radio"
+              id="backend"
+              name="interested-role"
+              value="backend"
+            />
+            Backend Developer
+          </label>
+          <label for="fullstack" id="fullstack-label">
+            <input
+              type="radio"
+              id="fullstack"
+              name="interested-role"
+              value="fullstack"
+            />
+            Fullstack Developer
+          </label>
+          <label for="db" id="db-label">
+            <input type="radio" id="db" name="interested-role" value="db" />
+            Database Developer
+          </label>
+          <label for="uidesigner" id="uidesigner-label">
+            <input
+              type="radio"
+              id="uidesigner"
+              name="interested-role"
+              value="uidesigner"
+            />
+            UI Designer
+          </label>
+          <label for="tester" id="tester-label">
+            <input
+              type="radio"
+              id="tester"
+              name="interested-role"
+              value="tester"
+            />
+            Tester
+          </label>
+          <label for="other" id="other-label">
+            <input
+              type="radio"
+              id="other"
+              name="interested-role"
+              value="other"
+            />
+            Other
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Which programming languages are you familiar with?</legend>
+          <label for="asm" id="asm-label">
+            <input type="checkbox" id="asm" name="asm" value="Assembler" />
+            Assembler
+          </label>
+          <label for="cpp" id="cpp-label">
+            <input type="checkbox" id="cpp" name="cpp" value="cpp" />
+            C/C++
+          </label>
+          <label for="java" id="java-label">
+            <input type="checkbox" id="java" name="java" value="Java" />
+            Java
+          </label>
+          <label for="js" id="js-label">
+            <input type="checkbox" id="js" name="js" value="js" />
+            JavaScript
+          </label>
+          <label for="python" id="python-label">
+            <input type="checkbox" id="python" name="python" value="Python" />
+            Python
+          </label>
+          <label for="php" id="php-label">
+            <input type="checkbox" id="php" name="php" value="php" />
+            PHP
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Comments and sugesions?</legend>
+          <label for="comments" id="comments-label">
+            <textarea
+              rows="5"
+              cols="10"
+              id="comments"
+              placeholder="If you have any comments and/or suggestions, please type them here ..."
+            ></textarea>
+          </label>
+        </fieldset>
+
+        <input type="submit" value="Submit" id="submit" />
+      </form>
+    </main>
+  </body>
+</html>
