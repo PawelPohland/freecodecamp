@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Tahoma, sans-serif;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f5f5f5;
+  margin: 3rem auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+
+nav header {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 1rem;
+}
+
+nav ul li {
+  line-height: 1.5rem;
+  position: relative;
+}
+
+nav ul li::before {
+  content: "\00bb";
+  position: absolute;
+  top: 0.2rem;
+  left: 0;
+}
+
+nav ul li:hover::before {
+  color: #ff0000;
+  font-weight: bold;
+}
+
+nav ul li a,
+nav ul li a:active {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: normal;
+  color: #0161ba;
+  display: block;
+  padding: 0.3rem 0.8rem 0.3rem 1rem;
+  transition: all 250ms ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #ff0000;
+}
+
+section header {
+  background-color: #333;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  padding: 0.3rem 1rem;
+  border-radius: 3px;
+}
+
+article {
+  margin: 1.5rem 0;
+}
+
+article p:first-of-type {
+  padding-top: 0.5rem;
+}
+
+article p:first-of-type:first-letter {
+  padding: 0.2rem 0.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+p {
+  line-height: 1.5rem;
+  font-size: 1rem;
+}
+
+ul li {
+  line-height: 1.5rem;
+}
+
+code::before {
+  content: "code";
+  display: block;
+  position: absolute;
+  top: -1.7rem;
+  left: -0.2rem;
+  text-transform: uppercase;
+  background-color: #333;
+  border: 1px solid #333;
+  color: #fff;
+  padding: 0.2rem 0.5rem;
+}
+
+code {
+  background-color: #bcbcbc;
+  border-left: 3px solid #333;
+  white-space: pre;
+  margin: 3.5rem 0 2rem 0;
+  display: block;
+  padding: 1.2rem 1rem;
+  position: relative;
+}
+
+section footer {
+  margin-bottom: 2rem;
+}
+
+section footer a,
+section footer a:active {
+  text-decoration: none;
+  text-align: right;
+  display: block;
+  color: #0161ba;
+}
+
+section footer a:hover {
+  color: #ff0000;
+}
+
+@media (min-width: 992px) {
+  body {
+    width: 95%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    column-gap: 2.5rem;
+  }
+
+  nav {
+    min-width: 230px;
+  }
+
+  nav ul {
+    margin-left: 0;
+  }
+
+  nav ul li::before {
+    display: none;
+  }
+
+  nav ul li:hover::before {
+    display: block;
+  }
+
+  nav ul li:hover::after {
+  content: "\00ab";
+  position: absolute;
+  top: 0.2rem;
+  right: 0;
+}
+
+  nav ul li a:hover {
+    background-color: #e8e8e8;
+  }
+
+  .main-section:last-of-type {
+    padding-bottom: 3rem;
+  }
+}
